@@ -1,0 +1,56 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input,i,em,input,textarea{ margin: 0;padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+*{color: #040a2b;}
+body{background-color: #efeff4;}
+
+
+.cartheard{width: 100%;margin: 0 auto;font-size: 13px;margin-top: 2vh;border-bottom: 1px solid #040a2b;}
+.cartheard p{text-align: center;padding: 1vh 0;}
+
+.mycart{width: 100%;margin: 0 auto;font-size: 13px;}
+.mycart p{text-align: center;}
+.mycart .p_01{font-weight: bold;font-size: 16px;margin: 1vh 0 0.5vh 0;}
+
+
+.myorder_01{ margin-top:2vw; padding:1vh 2vw 2vh 2vw; background:#fff;}
+.myorder_01 ul li{ float:left;}
+.myorder_01 .li1{ font-size:3vw;}
+.myorder_01 .li1 span{color:#b4b4b4;}
+.myorder_01 .li2{ font-size:3vw; color:#b4b4b4; margin-left:1vw;}
+.myorder_01 .li3{ font-size:3vw; float:right; margin-right:1vw;}
+.myorder_01 .li4{ font-size:3vw; color:#b4b4b4; float:right;}
+.myorder_01 img{ width:25vw; float:left; margin-top:2vw;}
+.myorder_01 ol{ float:left;margin-left:5vw;margin-top: 5vmin;}
+.myorder_01 .ol1{ font-weight:bold; font-size:4.5vw;}
+.myorder_01 .ol2{ font-size:3vw; margin-top:1vw;}
+.myorder_01 .ol3{ font-size:3vw; color:#b4b4b4; margin-top:3vw;}
+.myorder_01 .ol4{ font-size:3vw; margin-top:3vw;}
+.myorder_01 .ol4 p{ float:left;color:#d73b51;}
+.myorder_01 .ol5{ font-size:4vw; color:#000000; float:right; margin-left:15vw;}
+
+
+
+@media screen and (min-width: 320px) {
+    .headerr{height: 55px;}
+}
+@media screen and (min-width: 375px) {
+    .headerr{height: 63px;}
+}
+@media screen and (min-width: 414px) {
+    .headerr{height: 70px;}
+}
+@media screen and (min-width: 568px) {
+    .headerr{height: 100px;}
+}
+@media screen and (min-width: 667px) {
+    .headerr{height: 120px;}
+}
+@media screen and (min-width: 736px) {
+    .headerr{height: 140px;}
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员俱乐部</title>
+<link href="/view/pc/css/members.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/view/pc/members.js"></script>
+<script type="text/javascript" src="/view/pc/jquery-3.0.0.js"></script>
+<script src="/view/pc/jquery-3.1.1.min.js"></script>
+<script src="/view/pc/app.js"></script>
+<link rel="stylesheet" href="/view/pc/css/style.css">
+</head>
+<body>
+<!-- header -->
+	<div class="header_container">
+		<div class="header">
+			<div class="logo_box">
+				<a href="/view/pc/index.html"><img src="/view/pc/imgs/logo.png" alt=""></a>
+			</div>
+			<div class="sidebar">
+				<div class="useronload">登入</div>
+				<div class="shopCar">购物车</div>
+				<div class="search">搜索</div>
+			</div>
+			<div class="link_box">
+				<ul>
+                    <li><a href="/view/pc/index.html">首页</a></li>
+					<li class="pro"><a href="/view/pc/javascript:void(0)">产品中心</a></li>
+                    <li><a href="/view/pc/about.html">雨曦故事</a></li>
+                    <li><a href="/view/pc/community.html">雨曦社区</a></li>
+                    <li><a href="/view/pc/members.html">会员积分</a></li>
+                    <li><a href="/view/pc/contact.html">联系我们</a></li>
+                </ul>
+			</div>
+		</div>
+		
+		<div class="search_box">
+			<div class="s_input_list">
+				<from>
+					<input type="text" name="search">
+					<input type="button" value="搜索">
+				</from>
+			</div>
+		</div>
+		<!--搜索弹出-->
+
+		<div class="product">
+			<ul class="p_list">
+				<li><a href="/view/pc/Product.html">产品1</a></li>
+				<li><a href="/view/pc/Product_02.html">产品2</a></li>
+				<li><a href="/view/pc/Product_03.html">产品3</a></li>
+			</ul>
+		</div>
+		<!--产品弹出-->
+
+        <div class="shopCar_cont">
+			<div class="shopCar_box">
+				<span class="bot"></span>
+				<span class="top"></span>
+				<!--<div class="shop_none">
+					您的购物车里没有任何商品
+				</div>-->
+				<div class="shopBox">
+					<div class="shop_item">
+						<img src="/view/pc/imgs/01.jpg" alt="">
+						<div class="shop_msg">
+							<p>雅诗兰黛肌初赋活原生液</p>
+							<p>容量: 200ml </p>
+							<p>数量:1</p>
+							<p>价格:￥875</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="shop_item">
+						<img src="/view/pc/imgs/01.jpg" alt="">
+						<div class="shop_msg">
+							<p>雅诗兰黛肌初赋活原生液</p>
+							<p>容量: 200ml </p>
+							<p>数量:1</p>
+							<p>价格:￥875</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="shop_item">
+						<img src="/view/pc/imgs/01.jpg" alt="">
+						<div class="shop_msg">
+							<p>雅诗兰黛肌初赋活原生液</p>
+							<p>容量: 200ml </p>
+							<p>数量:1</p>
+							<p>价格:￥875</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="paythebill">
+						<div class="bill">
+							<div class="price">总额:￥1750</div>
+						</div>
+						<center><button style="background: #020322;color: #fff;">结账</button></center>
+						<center><a href="/view/pc/shop.html"><button style="background: #fff;">购物车</button></a></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--购物车弹出-->
+
+</div>
+
+<div class="kong"></div>
+<!-- information -->
+<div class="information">
+
+    <div class="informationleft">
+        <img src="/view/pc/imgs/members-img/viplogo.jpg" alt="">
+    </div>
+
+    <div class="informationrigth">
+        <div class="rigthcont">
+            <img src="/view/pc/imgs/members-img/vipbot.jpg" alt="">
+            <p class="rigthcont_p2"></p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- evaluation -->
+<div class="evaluation">
+
+    <div class="evaluation_01">
+        <div class="span">
+            <div class="span_01">
+                <span>入会规则</span>
+            </div>
+            <div class="span_02">
+                <span>会员晋升</span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="p">
+            <p>羽曦会员俱乐部,因每一位美丽如你的会员熠熠生辉。</p>
+            <p>不断更新提升您的护肤体验，正是我们全情投入的荣耀使命。</p>
+            <p>4月30日起，羽曦会员俱乐部全新升级，五层会员晋级机制，美丽专享全新定制。</p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="evaluation_02">
+        <div class="evaluation_021" id="evaluation_021">
+            <span class="span1">普通会员</span>
+            <span class="span2">只需要扫描公司微信公众平台或官网注册即可成为普通会员，并且享受官网产品9.5折优惠。</span>
+            <span class="span3" id="span_01">
+                <img src="/view/pc/imgs/members-img/play.png" alt="">
+            </span>
+            <div class="dropdown_01" id="dropdown_01">普通会员：只需要扫描公司微信公众平台或官网注册即可成为普通会员，并且享受官网产品9.5折优惠,普通会员累计消费800元，即可获得晋升为银卡会员资格，且享受银卡会员奖励政策。</div>
+        </div>
+        <div class="evaluation_022">
+            <span class="span1">银卡会员</span>
+            <span class="span2">注册成会员且第一次消费不低于人民币500元即可获得银卡会员资格，获得专属会员号,并且享受官网产品8.5折优惠。</span>
+            <span class="span3" id="span_02">
+                <img src="/view/pc/imgs/members-img/play.png" alt="">
+            </span>
+            <div class="dropdown_02" id="dropdown_02">银卡会员：注册成会员且第一次消费不低于人民币500元即可获得银卡会员资格，获得专属会员号。银卡会员从第二次消费开始即可获得公司官网所有产品8.5折优惠，并且每累计消费2000元即可获得返现200元现金券，银卡会员的现金仅限于公司官网使用，不得兑现,银卡会员发展3个银卡会员或者普通会员，且团队累计消费金额20000元，即可晋升为金卡会员，且享受金卡会员政策。</div>
+        </div>
+        <div class="evaluation_023">
+            <span class="span1">金卡会员</span>
+            <span class="span2">注册成会员且第一次消费不低于人民币2000元即可获得金卡会员资格，获得专属会员号,并且享受官网产品8折优惠。</span>
+            <span class="span3" id="span_03">
+                <img src="/view/pc/imgs/members-img/play.png" alt="">
+            </span>
+            <div class="dropdown_03" id="dropdown_03">金卡会员：注册成会员且第一次消费不低于人民币2000元即可获得金卡会员资格，获得专属会员号。金卡会员从第二次消费开始即可获得公司官网所有产品8折优惠，并且每累计消费10000元即可获得返现1500元的现金券，本现金券中的40%可以兑现，其他60%仅限于公司官网使用,金卡会员发展5个银卡会员或者3个金卡会员，且团队累计消费金额达到40000元以上，即可晋升为白金会员，且享受白金会员政策。</div>
+        </div>
+        <div class="evaluation_024">
+            <span class="span1">白金会员</span>
+            <span class="span2">注册成会员且第一次消费不低于人民币5000元即可获得白金会员资格，获得专属会员号,并且享受官网产品7折优惠。</span>
+            <span class="span3" id="span_04">
+                <img src="/view/pc/imgs/members-img/play.png" alt="">
+            </span>
+            <div class="dropdown_04" id="dropdown_04">白金会员：注册成会员且第一次消费不低于人民币5000元即可获得白金会员资格，获得专属会员号。白金会员从第二次消费开始即可获得公司官网所有产品的7折优惠，并且每累计消费20000元即可获得返现4000元的现金券，本现金券60%可以兑现，其余部分仅限于公司官网使用,白金会员发展5个金卡会员或者3个白金会员，且团队累计消费金额达到80000元以上，即可晋升为钻石会员，且享受钻石会员政策。</div>
+        </div>
+        <div class="evaluation_025">
+            <span class="span1">钻石会员</span>
+            <span class="span2">注册成会员且第一次消费不低于人民币10000元即可获得钻石会员资格，获得专属会员号,并且享受官网产品6折优惠。</span>
+            <span class="span3" id="span_05">
+                <img src="/view/pc/imgs/members-img/play.png" alt="">
+            </span>
+            <div class="dropdown_05" id="dropdown_05">钻石会员：注册成会员且第一次消费不低于人民币10000元即可获得钻石会员资格，获得专属会员号。钻石会员从第二次消费开始即可获得公司官网所有茶农的6折优惠，并且每累计消费40000元即可获得返现10000元的现金券，本现金券80%可以兑现，其余部分仅限于公司官网使用。</div>
+        </div>
+    </div>
+
+    <div class="evaluation_03">
+        <div class="span">
+            <div class="span_01">
+                <span>入会规则</span>
+            </div>
+            <div class="span_02">
+                <span>会员晋升</span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="p">
+            <p>羽曦会员俱乐部,因每一位美丽如你的会员熠熠生辉。</p>
+            <p>不断更新提升您的护肤体验，正是我们全情投入的荣耀使命。</p>
+            <p>4月30日起，羽曦会员俱乐部全新升级，五层会员晋级机制，美丽专享全新定制。</p>
+        </div>
+    </div>
+
+    <div class="evaluation_04">
+        <table>
+            <tr class="tr_01">
+                <td>会员等级</td>
+                <td>晋级条件</td>
+                <td>晋级等级 </td>
+            </tr>
+            <tr class="tr_02">
+                <td>普通会员</td>
+                <td>累计消费800元。</td>
+                <td>银卡会员</td>
+            </tr>
+            <tr class="tr_03">
+                <td>银卡会员</td>
+                <td>发展3个银卡会员或者普通会员，且团队累计消费金额20000元。</td>
+                <td>金卡会员</td>
+            </tr>
+            <tr class="tr_04">
+                <td>金卡会员</td>
+                <td>发展5个银卡会员或者3个金卡会员，且团队累计消费金额达到40000元以上。</td>
+                <td>白金会员</td>
+            </tr>
+            <tr class="tr_05">
+                <td>白金会员</td>
+                <td>白金会员发展5个金卡会员或者3个白金会员，且团队累计消费金额达到80000元以上。</td>
+                <td>钻石会员</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+    <div class="footer">
+        <div class="footer_content">
+            <div class="footer_box">
+                <h2>关于羽曦</h2>
+                <ul>
+                    <li><a href="/view/pc/">品牌故事</a></li>
+                    <li><a href="/view/pc/">品牌故事</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <h2>提供帮助</h2>
+                <ul>
+                    <li><a href="/view/pc/">联系我们</a></li>
+                    <li><a href="/view/pc/">400-123-456(9：30-18：30)</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <h2>客户服务</h2>
+                <ul>
+                    <li><a href="/view/pc/">退换货问题</a></li>
+                    <li><a href="/view/pc/">查看我的订单</a></li>
+                    <li><a href="/view/pc/">常见问题</a></li>
+                    <li><a href="/view/pc/">配送信息</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="copyright">
+            湘ICP备15006686号-1  版权所有：&copy;湖南宇源肽生物科技有限公司　　<a href="/view/pc/">法律声明</a>丨<a href="/view/pc/">隐私保护</a>丨<a href="/view/pc/">联系我们</a>丨<a href="/view/pc/">网站地图</a>
+        </div>
+    </div>
+    <!--页面底部-->
+    
+        <div class="shade"></div>
+    <!--遮罩-->
+    <div class="loading">
+        <div class="off_btn"><img src="/view/pc/imgs/load_off.png" alt=""></div>
+        <div class="input_list signUp">
+            <h2>加入会员</h2>
+            <input type="text" placeholder="名">
+            <input type="text" placeholder="电子邮箱">
+            <input type="password" placeholder="密码">
+            <input type="text" placeholder="手机">
+            <div class="ck_box">
+                <label>
+                    <input type="checkbox">我已阅读和了解羽曦及本网站的 <a href="/view/pc/">条款条件</a> 和 <a href="/view/pc/">隐私政策</a>，并且同意接受其中所有的条款。
+                </label>
+            </div>
+            <center><button>提交注册</button></center>
+            <div class="loading_btn">
+                已经注册?<a class="change_logUp" href="javascript:void(0)">请登录</a>
+            </div>
+        </div>
+
+        <div class="input_list logUp">
+            <h2>会员登录</h2>
+            <input type="text" placeholder="账户(邮箱/手机)">
+            <input type="password" placeholder="密码">
+            <center><button>会员登录</button></center>
+            <div class="loading_btn">
+                还没有账号?<a class="change_signUp" href="javascript:void(0)">现在注册</a>
+            </div>
+        </div>
+    </div>
+    <!--登录组件-->
+
+<script>
+$(function(){
+
+    $("#span_01").click(function(){
+        $("#dropdown_01").toggle(500);   
+    });
+    $("#span_02").click(function(){
+        $("#dropdown_02").toggle(500);   
+    });
+    $("#span_03").click(function(){
+        $("#dropdown_03").toggle(500);   
+    });
+    $("#span_04").click(function(){
+        $("#dropdown_04").toggle(500);   
+    });
+    $("#span_05").click(function(){
+        $("#dropdown_05").toggle(500);   
+    });
+})
+</script>
+</body>
+</html>

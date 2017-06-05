@@ -1,0 +1,151 @@
+/*2016/6/10 11:53*/
+@charset "utf-8";
+
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input{ margin: 0 auto;padding: 0 auto;}
+body{ background:#efeff4;font-family:"MicrosoftYaHei";}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;color: #646363;}
+figure,li,strong{ box-sizing: border-box;}
+.none{ display: none;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+.zw{display: block;height: 17vmin;}
+.x_hide{ display: none;}
+.fl{ float: left; }
+.fr{ float: right; }
+
+.title{text-align: center;color: #040a2b;font-size: 4.5vmin;margin: 4vmin auto;}
+select{appearance:none; -moz-appearance:none;-webkit-appearance:none;}
+
+
+
+.cont1{ background:#fff;}
+.cont1 .text{
+	display: inline-block;
+	height: 13vmin;
+	line-height: 13vmin;
+	margin-left: 3vmin;
+	font-size: 4vmin;
+	text-indent: 2vmin;
+}
+.cont1 .text1{
+	 float:right;	
+	 font-size: 4vmin;
+	 padding:4vmin 15vmin 0 0;
+	}
+.cont1 .text1 input{ 
+     color:#646363;
+     border: 0;
+    }
+   
+
+.cont2{ background:#fff;border-top: 1px solid #eee;}
+.cont2 .text{
+	display: inline-block;
+	height: 13vmin;
+	line-height: 13vmin;
+	margin-left: 3vmin;
+	font-size: 4vmin;
+	text-indent: 2vmin;
+}
+.cont2 .text1{
+	 float:right;	
+	 font-size: 4vmin;
+	 padding:4vmin 15vmin 0 0;
+	}
+.cont2 .text1 input{ 
+     color:#646363;
+     border: 0;
+    }
+
+.cont3{ background:#fff;border-top: 1px solid #eee;}
+.cont3 .text{
+	display: inline-block;
+	height: 13vmin;
+	line-height: 13vmin;
+	margin-left: 3vmin;
+	font-size: 4vmin;
+	text-indent: 2vmin;
+}
+.cont3 .text1{
+	 float:right;	
+	 font-size: 4vmin;
+	 padding:4vmin 15vmin 0 0;
+	}
+.cont3 .text1 input{ 
+     color:#646363;
+     border: 0;
+    }
+.cont3 .text1 .ars-style{float: left;} 
+
+
+.cont4{ background:#fff;border-top: 1px solid #eee;}
+.cont4 .text{
+	display: inline-block;
+	height: 13vmin;
+	line-height: 13vmin;
+	margin-left: 3vmin;
+	font-size: 4vmin;
+	text-indent: 2vmin;
+}
+.cont4 .text1{
+	 float:right;	
+	 font-size: 4vmin;
+	 padding:4vmin 15vmin 0 0;
+	}
+.cont4 .text1 input{ 
+     color:#646363;
+     border: 0;
+    }
+
+
+.cont5{ background:#fff;border-top: 1px solid #eee;}
+.cont5 .text{
+	display: inline-block;
+	height: 13vmin;
+	line-height: 13vmin;
+	margin-left: 3vmin;
+	font-size: 4vmin;
+	text-indent: 2vmin;
+}
+.cont5 .text1{
+	 float:right;	
+	 font-size: 4vmin;
+	 padding:4vmin 15vmin 0 0;
+	}
+.cont5 .text1 input{ 
+     color:#646363;
+     border: 0;
+    }
+
+.checkbox{font-size: 4vmin;margin: 3vmin 0 0 5vmin;}
+.checkbox input{width: 15px;height: 15px;position: relative;top: 0.5vmin;}
+
+
+
+.add{position: fixed;bottom: 0;width: 100%;padding: 5vmin 0;background-color: #00FFFF;border: 0;}
+.add p{text-align: center;color: #fff;font-size: 4.5vmin;}
+
+.cont2 #telId{font-size: 3vmin;color: red;position: absolute;right: 3vmin;}
+.cont5 #you{font-size: 3vmin;color: red;position: absolute;right: 3vmin;}
+
+@media all and (orientation : landscape){
+	.user{
+		top: 30%;
+	}
+}
+@media screen and (min-width: 568px) {
+    .headeer{
+		margin-top: 27vmin;
+	}
+}
+@media screen and (min-width: 667px) {
+    .headeer{
+		margin-top: 25vmin;
+	}
+}
+@media screen and (min-width: 736px) {
+    .headeer{
+		margin-top: 22vmin;
+	}
+}

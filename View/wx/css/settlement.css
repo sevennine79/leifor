@@ -1,0 +1,48 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input,i,em,input,textarea{ margin: 0;padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+*{color: #040a2b;}
+
+
+.cartheard{width: 100%;margin: 0 auto;font-size: 13px;margin-top: 2vh;border-bottom: 1px solid #040a2b;}
+.cartheard p{text-align: center;padding: 1vh 0;}
+
+.mycart{width: 100%;margin: 0 auto;font-size: 13px;}
+.mycart p{text-align: center;}
+.mycart .p_01{font-weight: bold;font-size: 16px;margin: 1vh 0 0.5vh 0;}
+
+.conteninput{width: 80%;margin: 3vh auto;}
+.conteninput .name{font-size: 4vmin;}
+.conteninput .name input{margin-left: 8vmin;padding: 1vmin 0;}
+.conteninput .sex{font-size: 4vmin;margin-top: 3vh;}
+.conteninput .sex input{margin-left: 8vmin;padding: 1vmin 0;}
+.conteninput .youbian{font-size: 4vmin;margin-top: 3vh;}
+.conteninput .youbian input{margin-left: 8vmin;padding: 1vmin 0;}
+.conteninput .address{font-size: 4vmin;margin-top: 3vh;}
+.conteninput .address input{padding: 1vmin 0;}
+.conteninput .payment{font-size: 4vmin;margin-top: 3.5vh;}
+.conteninput .payment .span_02{color: #aaa;}
+.conteninput .phone{font-size: 4vmin;margin-top: 3vh;}
+.conteninput .phone input{padding: 1vmin 0;}
+
+.conteninput button{width: 100%;background-color: #040a2b;border: 0;color: #fff;margin-top: 5vh;padding: 1.5vh 0;}
+
+.commodity{width: 100%;margin: 5vh auto 2vh auto;padding: 2vh 0;border-top: 1px solid #040a2b;border-bottom: 1px solid #040a2b;font-size: 13px;}
+.commodity .commodityimg{width: 40%;float: left;}
+.commodity .commoditycont{float: left;}
+.commodity .Modify{font-size: 12px;width: 40px;height: 15px;text-align: center;float: right;position: relative;top: -8px;color: #aaa;}
+.commodity .commoditycont .name{font-size: 14px;margin: 10px 0 10px 20px;}
+.commodity .commoditycont .select{margin: 10px 0 10px 20px;}
+.commodity .commoditycont select{padding: 5px 30px 5px 15px; appearance:none; -moz-appearance:none; -webkit-appearance:none;border: 1px solid #040a2b;}
+.commodity .commoditycont .select span{position: relative;}
+.commodity .commoditycont .price{color: #040a2b;font-weight: bold;margin: 0 0 0 20px;}
+
+.returntop{font-size: 15px;color: #040a2b;text-align: center;margin: 5vh 0;cursor:pointer;}
+
+#telId{color: red;font-size: 8px;text-align: center;}
+#you{color: red;font-size: 8px;text-align: center;}

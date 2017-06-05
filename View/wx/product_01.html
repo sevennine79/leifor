@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<link href="/view/wx/css/index.css" rel="stylesheet">
+<link href="/view/wx/css/product.css" rel="stylesheet">
+<script src="/view/wx/js/jquery.min.js"></script>
+<script src="/view/wx/js/index.js"></script>
+<script type="text/javascript">
+	$(function () {
+            var speed = 800;//滚动速度
+            var h=document.body.clientHeight;
+            
+            //回到顶部
+            $("#toTop").click(function () {
+                $('html,body').animate({
+                    scrollTop: '0px'
+                },
+                speed);         
+            });
+        });
+</script>
+<title>羽曦-修复保湿洁面乳</title>
+</head>
+<body>
+<div class="container">
+    
+    <div class="productimg">
+        <img src="/view/wx/img/product_01.jpg" alt="">
+    </div>  
+
+    <div class="paycar">
+        <div class="car">
+            <div class="tb1_td5">
+                <input id="min2" name=""  style=" width:30px; height:20px;border:1px solid #ccc;" type="button" value="-" />
+                <input id="text_box2" name="" type="text" value="1" style=" width:40px; text-align:center; border:1px solid #ccc;" />
+                <input id="add2" name="" style=" width:30px; height:20px; border:1px solid #ccc; " type="button" value="+" />
+            </div>
+            <div class="tb1_td6"><label id="total2" class="tot" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></div>
+            <div class="pay">加入购物车</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    $(function () {
+        var t = $("#text_box2");
+        $("#add2").click(function () {
+            t.val(parseInt(t.val()) + 1)
+            setTotal(); GetCount();
+        })
+        $("#min2").click(function () {
+            if(t.val()>0){
+                t.val(parseInt(t.val()) - 1)
+                setTotal(); GetCount();
+            }
+        })
+        function setTotal() {
+
+            $("#total2").html((parseInt(t.val()) * 300).toFixed(2));
+            $("#newslist-2").val(parseInt(t.val()) * 300);
+        }
+        setTotal();
+    })
+    </script>
+
+    <div class="clearfix"></div>
+
+    <div class="productnamecontent">
+        <p>羽曦-修复保湿洁面乳</p>
+        <div class="content_01">
+            <div class="title">吸附性强</div>
+            <span> - 蚕丝面膜的吸附性比普通的无纺布面膜纸要好得多，能吸收更多的精华液，敷脸的时候也非常服帖，不会掉下来不会有精华液滴落的状态。</span>
+        </div>
+        <div class="content_02">
+            <div class="title">质地轻薄</div>
+            <span> - 蚕丝面膜采用的是最为轻柔最为细腻的蚕丝，可以紧密贴合肌肤的纹理，所以敷面的时候服帖度很高，而且非常薄，透明、透气，鼻翼、嘴角都能紧密填补，锁水持久，补水深入。</span>
+        </div>
+        <div class="content_03">
+            <div class="title">补水修复</div>
+            <span> - 蚕丝面膜能加速皮肤自身的修复机能，如果是晒后肌肤处于敏感脆弱状态，就可以通过蚕丝纤维的细腻贴合来让受损肌肤迅速得到修复。还可以促进胶原蛋白的分泌、强效增白、抗UV作用、抗发炎、痘疱能力。</span>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="recommended">
+        <p class="title">推荐单品</p>
+        <div class="product_01">
+            <div class="conten">
+                <img src="/view/wx/img/productcont_02.jpg" alt="">
+                <div class="p_01">羽曦-修护因子冻干粉</div>
+                <div class="p_02">￥ 300.00</div>
+                <a href="?action=product_02"><button>立即购买</button></a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="product_02">
+            <div class="conten">
+                <img src="/view/wx/img/productcont_03.jpg" alt="">
+                <div class="p_01">羽曦-肽-修护面膜</div>
+                <div class="p_02">￥ 300.00</div>
+                <a href="?action=product_03"><button>立即购买</button></a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="returntop" id="toTop">
+        <p>▲  返回顶部</p>
+    </div>
+</div>
+    <div class="kong"></div>
+    <div class="header">
+        <a href="?action=index">
+            <div class="index">
+                <ul>
+                    <li><img src="/view/wx/img/index1.png" alt=""></li>
+                    <li>首页</li>
+                </ul>
+            </div>
+        </a> 
+        <a href="?action=Productcenter">   
+            <div class="mycar">
+                <ul>
+                    <li><img src="/view/wx/img/history1.png" alt=""></li>
+                    <li>产品中心</li>
+                </ul>
+            </div>
+        </a>
+        <a href="?action=cart">    
+            <div class="history">
+                <ul>
+                    <li><img src="/view/wx/img/mycar1.png" alt=""></li>
+                    <li>购物车</li>
+                </ul>
+            </div>
+        </a>   
+        <a href="?action=order"> 
+            <div class="my">
+                <ul>
+                    <li><img src="/view/wx/img/my1.png" alt=""></li>
+                    <li>个人中心</li>
+                </ul>
+            </div>
+        </a>    
+    </div>
+</body>
+<script type="text/javascript">
+    TouchSlide({ 
+        slideCell:"#slideBox",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell:".bd ul", 
+        effect:"leftLoop", 
+        autoPlay:true,
+        autoPage:true //自动分页
+    });
+</script>
+</html>

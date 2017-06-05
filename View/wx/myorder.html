@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name = "format-detection" content="telephone = no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta charset="UTF-8">
+	<title>我的订单</title>
+	<link rel="stylesheet" href="/view/wx/css/myorder.css">
+	<link href="/view/wx/css/index.css" rel="stylesheet">
+	<script src="/view/wx/js/jquery.min.js"></script>
+	<script src="/view/wx/js/TouchSlide.1.1.js"></script>
+	<script src="/view/wx/js/index.js"></script>
+</head>
+<body>
+<div class="container">
+	
+	<div class="title">
+		<p>我的订单</p>
+	</div>
+	
+	<a href="?action=product_01">
+		<div class="myorder_01">
+			<div class="container">
+		      <ul>
+		        <li class="li1">订单号：<span>000000003</span></li>
+		        <li class="li4">已付款</li>
+		        <li class="li3">交易状态:</li>
+		      </ul>     
+		      <div class="clearfix"></div>
+		      <img src="/view/wx/img/productcont_01.jpg">     
+		      <ol>
+		        <li class="ol1">羽曦-修复保湿洁面乳</li>
+		        <li class="ol3">运费：￥0.00</li>
+		        <li class="ol4">
+		          <p>￥300.00   ×1</p>
+		          <span class="ol5">小计：￥300.00</span>
+		        </li>
+		      </ol>
+		      <div class="clearfix"></div>  
+		   	</div>
+		</div>
+	</a>
+	
+	<a href="?action=product_01">
+		<div class="myorder_02">
+			<div class="container">
+		      <ul>
+		        <li class="li1">订单号：<span>000000004</span></li>
+		        <li class="li4">立即付款</li>
+		        <li class="li3">交易状态:</li>
+		      </ul>     
+		      <div class="clearfix"></div>
+		      <img src="/view/wx/img/productcont_01.jpg">     
+		      <ol>
+		        <li class="ol1">羽曦-修复保湿洁面乳</li>
+		        <li class="ol3">运费：￥0.00</li>
+		        <li class="ol4">
+		          <p>￥300.00   ×1</p>
+		          <span class="ol5">小计：￥300.00</span>
+		        </li>
+		      </ol>
+		      <div class="clearfix"></div>  
+		   	</div>
+		</div>
+	</a>
+
+</div>   
+    <div class="kong"></div>
+	<div class="header">
+        <a href="?action=index">
+            <div class="index">
+                <ul>
+                    <li><img src="/view/wx/img/index1.png" alt=""></li>
+                    <li>首页</li>
+                </ul>
+            </div>
+        </a> 
+        <a href="?action=cart">
+            <div class="mycar">
+                <ul>
+                    <li><img src="/view/wx/img/history1.png" alt=""></li>
+                    <li>产品中心</li>
+                </ul>
+            </div>
+        </a>
+        <a href="?action=cart">
+            <div class="history">
+                <ul>
+                    <li><img src="/view/wx/img/mycar1.png" alt=""></li>
+                    <li>购物车</li>
+                </ul>
+            </div>
+        </a>   
+        <a href="?action=order">
+            <div class="my">
+                <ul>
+                    <li><img src="/view/wx/img/my2.png" alt=""></li>
+                    <li style="font-weight: bold;color:#040a2b;">个人中心</li>
+                </ul>
+            </div>
+        </a>    
+    </div>
+
+    <script>
+      $(function(){
+		  $('s').click()
+	  })
+    </script>
+</body>
+</html>

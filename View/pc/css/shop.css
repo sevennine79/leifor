@@ -1,0 +1,48 @@
+@charset "utf-8";
+.container{width: 1000px;margin-top: 120px;}
+.container_l{width: 700px;float: left;}
+.container_l .warning{text-align: center;margin-top: 20px;}
+.container_l .warning span{color: #0000CD;text-decoration: underline;cursor: pointer;}
+.shopPage{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;margin-top: 50px;}
+.s_title{height: 60px;line-height: 60px;}
+.s_title button{width: 100px;border: 1px solid #000;background: #fff;width: 100px;height: 30px;margin-left: 513px;}
+.s_title a{width: 100px;height: 30px;}
+.tabelHead{color: #ccc;font-size: 0px;}
+.tabelHead p{display: inline-block;font-size: 14px;padding: 10px 0;}
+.tabelHead p:nth-child(1){width: 500px;}
+.tabelHead p:nth-child(2){width: 85px;}
+.tabelHead p:nth-child(3){width: 85px;}
+.bd_b{border-bottom: 1px solid #ccc;}
+.bd_b_d{border-bottom: 1px dashed #ccc;}
+.fourteenpx{font-size: 14px;}
+
+.helpBox p{padding: 10px 0;color: #040a2b;font-size: 14px;}
+.container_r{width: 250px;border: 1px solid #ccc;box-sizing: border-box;float: left;margin-left: 50px;padding: 10px 20px;}
+.helpBox .help_title{color: #040a2b;font-size: 18px;border-bottom: 1px solid #ccc;padding-bottom: 5px;font-weight: bold;}
+.helpBox .cl_s{color: #999;font-size: 14px;}
+.helpBox .phone{color: #040a2b;font-size: 18px;text-align: center;padding: 0 0 10px 0;}
+.ordermsg{color: #040a2b;}
+.ordermsg div{padding: 10px 0;}
+.ordermsg div strong{width: 120px;display: inline-block;font-size: 14px;}
+.ordermsg .order_title{font-size: 20px;font-weight: bold;padding: 10px 0 0 0;}
+.ordermsg .order_num{padding: 0 0 10px 0;}
+
+.shopItem img{width: 172px;float: left;}
+.shopItem{border-bottom: 1px solid #ccc;padding: 20px 0;}
+.shopItem:last-child{border: none;}
+.shopItemMsg{float: left;width: 325px;box-sizing: border-box;}
+.shopItemMsg p{margin-top: 20px;padding-left: 10px;}
+.shopItemMsg p a{font-size: 14px;font-weight: bold;text-decoration: underline;}
+.shopItemParameter{float: left;margin-top: 20px;}
+.shopItemParameter select{width: 60px;height: 30px;}
+.shopItemParameter span{font-size: 12px;margin-left: 14px;font-weight: bold;}
+.shopItemNull{color: red;text-align: center;display: none;}
+.shopMin p{text-decoration: underline;text-align: right;padding: 20px 0;}
+.shopMin span{font-weight: bold;}
+.shopMin .btn1{width: 100px;height: 30px;background: #fff;border: 1px solid #040a2b;color: #040a2b;cursor: pointer;}
+.shopMin .btn2{width: 100px;height: 30px;background: #040a2b;border: none;color: #fff;cursor: pointer;}
+.btnlist{float: right;}
+
+.msg{font-size: 12px;color: #999;margin-top: 20px;padding: 0 0 5px 0;}
+.msg1{font-size: 12px;color: #999;padding: 5px 0 0 0;}
+

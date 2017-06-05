@@ -1,0 +1,9 @@
+@charset "utf-8";
+body,html,div,h1{margin: 0;padding: 0;}
+.container-fluid{background: url(../imgs/bg.jpg);height: 100vh;}
+.container{margin-top: 15%;}
+.box{padding: 10px 0 30px 0;}
+.container h1{color: #fff;text-align: center;padding-bottom: 10px;}
+.container .box{background: rgba(255, 255, 255, .4);width: 400px;margin: 0 auto;border-radius: 10px;}
+.form-group{width: 300px;margin: 0 auto;}
+.btn{text-align: center;width: 150px;}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input,i,em,input,textarea{ margin: 0;padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+
+.header{position: fixed;top: 0;z-index: 9;}
+.headerr{width: 100%;position: inherit;top: 0;background-color: #fff;height: 65px;}
+
+.content{width: 95%;margin: 0 auto;}
+.content .content_01 p{font-size: 13px;color: #4c4c4c;text-align: center;margin-top: 2.5vh;}
+.content .content_01 .p_01{font-weight: bold;font-size: 20px;}
+.content .content_01 .p_02{margin-top: 0;font-weight: bold;font-size: 18px;}
+.content .content_01 .p_03,.content .content_01 .p_04,.content .content_01 .p_05,.content .content_01 .p_06{text-indent: 5vw;}
+
+.content .content_02{}
+.content .content_02 p{font-size: 13px;color: #4c4c4c;text-align: center;margin-top: 2.5vh;}
+.content .content_02 .p_01{font-weight: bold;font-size: 20px;}
+.content .content_02 .p_02{margin-top: 0;font-weight: bold;font-size: 14px;}
+.content .content_02 .p_03{text-indent: 5vw;}
+
+.content .content_03 p{font-size: 13px;color: #4c4c4c;text-align: center;margin-top: 2.5vh;}
+.content .content_03 .p_01{font-weight: bold;font-size: 20px;}
+
+.content .content_04 p{font-size: 13px;color: #4c4c4c;text-align: center;margin-top: 2.5vh;}
+.content .content_04 .p_01{font-weight: bold;font-size: 20px;}
+.content .content_04 .p_02,.content .content_04 .p_03{font-weight: bold;font-size: 14px;}
+
+
+
+.returntop{font-size: 15px;color: #040a2b;text-align: center;margin: 5vh 0;cursor:pointer;}
+
+@media screen and (min-width: 320px) {
+    .headerr{height: 55px;}
+}
+@media screen and (min-width: 375px) {
+    .headerr{height: 63px;}
+}
+@media screen and (min-width: 414px) {
+    .headerr{height: 70px;}
+}
+@media screen and (min-width: 568px) {
+    .headerr{height: 100px;}
+}
+@media screen and (min-width: 667px) {
+    .headerr{height: 120px;}
+}
+@media screen and (min-width: 736px) {
+    .headerr{height: 140px;}
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<link href="/view/wx/css/index.css" rel="stylesheet">
+<link href="/view/wx/css/cart.css" rel="stylesheet">
+<script src="/view/wx/js/jquery.min.js"></script>
+<script src="/view/wx/js/index.js"></script>
+<script type="text/javascript">
+	$(function () {
+            var speed = 800;//滚动速度
+            var h=document.body.clientHeight;
+            
+            //回到顶部
+            $("#toTop").click(function () {
+                $('html,body').animate({
+                    scrollTop: '0px'
+                },
+                speed);         
+            });
+
+            $(".delet").click(function(){
+                $(".commodity").css("display","none");
+            })
+        });
+</script>
+<title>购物车</title>
+</head>
+<body>
+<div class="container">
+    <form action="">
+    
+    <div class="cartheard">
+        <p>如有任何问题  欢迎拨打客服热线</p>
+        <p>4009-555-888</p>
+    </div>
+
+    <div class="nocart">
+        <p>购物车内暂无商品</p>
+        <a href="?action=index"><p class="goshop">继续购物</p></a>
+    </div>
+
+    </form>
+</div>    
+    <div class="kong"></div>
+    <div class="header">
+        <a href="?action=index">
+            <div class="index">
+                <ul>
+                    <li><img src="/view/wx/img/index1.png" alt=""></li>
+                    <li>首页</li>
+                </ul>
+            </div>
+        </a> 
+        <a href="?action=Productcenter">
+            <div class="mycar">
+                <ul>
+                    <li><img src="/view/wx/img/history1.png" alt=""></li>
+                    <li>产品中心</li>
+                </ul>
+            </div>
+        </a>
+        <a href="?action=cart">
+            <div class="history">
+                <ul>
+                    <li><img src="/view/wx/img/mycar2.png" alt=""></li>
+                    <li style="font-weight: bold;color:#040a2b;">购物车</li>
+                </ul>
+            </div>
+        </a>   
+        <a href="?action=order">
+            <div class="my">
+                <ul>
+                    <li><img src="/view/wx/img/my1.png" alt=""></li>
+                    <li>个人中心</li>
+                </ul>
+            </div>
+        </a>    
+    </div>
+
+</body>
+<script type="text/javascript">
+    TouchSlide({ 
+        slideCell:"#slideBox",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell:".bd ul", 
+        effect:"leftLoop", 
+        autoPlay:true,
+        autoPage:true //自动分页
+    });
+</script>
+</html>

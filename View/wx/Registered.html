@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<link href="/view/wx/css/index.css" rel="stylesheet">
+<link href="/view/wx/css/Registered.css" rel="stylesheet">
+<script src="/view/wx/js/jquery.min.js"></script>
+<script src="/view/wx/js/index.js"></script>
+<script src="/view/wx/js/yz.js"></script>
+<title>羽曦注册会员</title>
+</head>
+<body style="" method="post">
+    <form action="" action="submitpage.htm" onsubmit="return validate_form(this);">
+        <div class="Registered">
+        	<p class="p_01">羽曦会员注册</p>
+            <input type="text" id="user-name" onblur="checkUserName()" placeholder="请输入账号" required/>
+            <div id="nameInfo"></div>
+            <input type="password" placeholder="请输入密码" id="password" onblur="checkPassword()"/>
+            <div id="passwordInfo"></div>
+            <input type="password" placeholder="请再次输入密码" id="repassword" onblur="checkPassword()"/>
+            <div id="repasswordInfo"></div>
+            <input type="text" placeholder="请输入邮箱地址" name="email" required/>
+            <button>注册</button>
+            <p class="p_02"><a href="/view/wx/Thelogin.html">点击立即登录</a></p>
+        </div>
+    </form>    
+</body>
+</html>

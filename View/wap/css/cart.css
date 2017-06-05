@@ -1,0 +1,59 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input,i,em,input,textarea{ margin: 0;padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+*{color: #040a2b;}
+
+.header{position: fixed;top: 0;z-index: 9;}
+.headerr{width: 100%;position: inherit;top: 0;background-color: #f5f5f5;height: 70px;}
+
+.cartheard{width: 100%;margin: 0 auto;font-size: 13px;margin-top: 2vh;border-bottom: 1px solid #040a2b;}
+.cartheard p{text-align: center;padding: 1vh 0;}
+
+.mycart{width: 100%;margin: 0 auto;font-size: 13px;}
+.mycart p{text-align: center;}
+.mycart .p_01{font-weight: bold;font-size: 16px;margin: 1vh 0 0.5vh 0;}
+
+.commodity{width: 90%;margin: 2vh auto 2vh auto;padding: 2vh 0;border-top: 1px solid #040a2b;border-bottom: 1px solid #040a2b;font-size: 13px;}
+.commodity .commodityimg{width: 40%;float: left;}
+.commodity .commoditycont{float: left;}
+.commodity .delet{font-size: 15px;width: 20px;height: 20px;text-align: center;float: right;position: relative;top: -8px;}
+.commodity .commoditycont .name{font-size: 14px;margin: 35px 0 10px 20px;}
+.commodity .commoditycont .select{margin: 10px 0 10px 20px;}
+.commodity .commoditycont select{padding: 5px 30px 5px 15px; appearance:none; -moz-appearance:none; -webkit-appearance:none;border: 1px solid #040a2b;}
+.commodity .commoditycont .select span{position: relative;left: -20px;}
+.commodity .commoditycont .price{color: #040a2b;font-weight: bold;margin: 0 0 0 20px;}
+
+.cartfooter{width: 90%;margin: 0 auto;font-size: 13px;}
+.cartfooter div{margin: 15px 0;}
+.cartfooter div span{margin-left: 100px;}
+.cartfooter button{width: 100%;margin: 10px auto;background-color: #040a2b;padding: 1.5vh 0;border: 0;color: #fff;position: relative;bottom: 0;}
+
+.nocart{width: 100%;margin: 4vh auto 0 auto;}
+.nocart p{font-size: 15px;text-align: center;}
+.nocart .goshop{font-size: 13px;margin: 0 auto;width: 30%;text-align: center;background-color: #040a2b; color: #fff;padding: 6px 0;margin: 20px auto 0 auto;}
+
+
+
+@media screen and (min-width: 320px) {
+    .headerr{height: 55px;}
+}
+@media screen and (min-width: 375px) {
+    .headerr{height: 63px;}
+}
+@media screen and (min-width: 414px) {
+    .headerr{height: 70px;}
+}
+@media screen and (min-width: 568px) {
+    .headerr{height: 100px;}
+}
+@media screen and (min-width: 667px) {
+    .headerr{height: 120px;}
+}
+@media screen and (min-width: 736px) {
+    .headerr{height: 140px;}
+}

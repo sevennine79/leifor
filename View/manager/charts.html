@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>数据统计</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+  <script src="https://img.hcharts.cn/highcharts/modules/data.js"></script>
+	<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-head">
+        <center>
+          <div class="admin">
+            <p>欢迎你，管理员</p>
+            <span class="radio">Online</span>
+          </div>
+        </center>
+      </div>
+      <div class="sidebar-list">
+        <a href="order.html"><div class="item">订单列表</div></a>
+        <a href="shop.html"><div class="item">商品列表</div></a>
+        <a href="addshop.html"><div class="item">添加商品</div></a>
+        <a href="user.html"><div class="item">用户管理</div></a>
+        <a href="charts.html"><div class="item">数据统计</div></a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="list">
+        <div class="item-title">数据统计</div>
+        <div class="content">
+            <div class="sumBox" style="background-color: #a92848;">
+                <div class="sumBoxItem">
+                    <p style="margin-top: 10px;">累计销售金额</p>
+                    <p style="margin-top: -15px;"><span>￥1000000.00</span></p>
+                </div>
+            </div>
+            <div class="sumBox" style="background-color: #723b9a;">
+                <div class="sumBoxItem">
+                    <p style="margin-top: 10px;">本月销售金额</p>
+                    <p style="margin-top: -15px;"><span>￥100000.00</span></p>
+                </div>
+            </div>
+            <div class="sumBox" style="background-color: #086066;">
+                <div class="sumBoxItem">
+                    <p style="margin-top: 10px;">本周销售金额</p>
+                    <p style="margin-top: -15px;"><span>￥10000.00</span></p>
+                </div>
+            </div>
+            <div class="sumBox" style="background-color: #e34c77;">
+                <div class="sumBoxItem">
+                    <p style="margin-top: 10px;">本日销售金额</p>
+                    <p style="margin-top: -15px;"><span>￥1000.00</span></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="item-title">销量统计图</div>
+          <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#day" data-toggle="tab">
+                    日
+                </a>
+            </li>
+            <li><a href="#week" data-toggle="tab">周</a></li>
+            <li><a href="#month" data-toggle="tab">月</a></li>
+            <li><a href="#season" data-toggle="tab">季</a></li>
+            <li><a href="#year" data-toggle="tab">年</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="day">
+                  <div id="dcontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+              </div>
+              <div class="tab-pane fade" id="week">
+                  <div id="wcontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+              </div>
+              <div class="tab-pane fade" id="month">
+                  <div id="mcontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+              </div>
+              <div class="tab-pane fade" id="season">
+                  <div id="scontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+              </div>
+              <div class="tab-pane fade" id="year">
+                  <div id="ycontainer" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+              </div>
+          </div>
+
+        <div class="item-title">平台访问途径</div>
+        <div class="content">
+          <div class="container">
+            <div id="fwcontainer" style="min-width:400px;height:400px"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<table class="datatable" id="datatable1">
+    <thead>
+        <tr>
+            <th></th>
+            <th>商品1</th>
+            <th>商品2</th>
+            <th>商品3</th>
+            <th>商品4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>本日</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+<!--日数据-->
+
+<table class="datatable" id="datatable2">
+    <thead>
+        <tr>
+            <th></th>
+            <th>商品1</th>
+            <th>商品2</th>
+            <th>商品3</th>
+            <th>商品4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>星期一</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>星期二</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>星期三</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>星期四</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>星期五</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>星期六</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>星期天</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+<!--周数据-->
+
+<table class="datatable" id="datatable3">
+    <thead>
+        <tr>
+            <th></th>
+            <th>商品1</th>
+            <th>商品2</th>
+            <th>商品3</th>
+            <th>商品4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>一月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>二月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>三月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>四月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>五月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>六月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>七月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>八月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>九月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>十月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>十一月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>十二月</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+<!--月数据-->
+
+<table class="datatable" id="datatable4">
+    <thead>
+        <tr>
+            <th></th>
+            <th>商品1</th>
+            <th>商品2</th>
+            <th>商品3</th>
+            <th>商品4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>2017年第一季度</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>2017年第二季度</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>2017年第三季度</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>2017年第四季度</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+<!--季数据-->
+
+<table class="datatable" id="datatable5">
+    <thead>
+        <tr>
+            <th></th>
+            <th>商品1</th>
+            <th>商品2</th>
+            <th>商品3</th>
+            <th>商品4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>2017年</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>2018年</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>2019年</th>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+<!--年数据-->
+
+
+  <script src="js/charts.js"></script>
+  </body>
+</html>

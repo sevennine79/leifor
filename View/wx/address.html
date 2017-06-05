@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name = "format-detection" content="telephone = no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta charset="UTF-8">
+	<title>收货地址管理</title>
+	<link rel="stylesheet" href="/view/wx/css/address.css">
+	<link href="/view/wx/css/index.css" rel="stylesheet">
+	<script src="/view/wx/js/jquery.min.js"></script>
+	<script src="/view/wx/js/TouchSlide.1.1.js"></script>
+	<script src="/view/wx/js/index.js"></script>
+</head>
+<body>
+<div class="container">
+	
+    <p class="title">收货地址管理</p>
+
+    <a href="?action=add">
+        <div class="myaddress_01">
+            <div class="container">
+              <div class="name">
+                    <span>张三</span>
+                    <span>15578888888</span>
+              </div>
+              <div class="address">
+                  <span class="address_01">[默认]</span>
+                  <span class="address_02">湖南省  长沙市  雨花区  香樟路22号，某某学校 某某宿舍 </span>
+              </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="?action=add">
+        <div class="myaddress_01">
+            <div class="container">
+              <div class="name">
+                    <span>李四</span>
+                    <span>16666666666</span>
+              </div>
+              <div class="address">
+                  <span class="address_01" style="display:none;">[默认]</span>
+                  <span class="address_02">湖南省  长沙市  开福区区  金马路22号，某某街道 某某学校 某某宿舍</span>
+              </div>
+            </div>
+        </div>
+    </a>
+
+	
+</div>   
+
+  <a href="?action=add">
+    <div class="add">
+        <p>新增收货地址</p>
+    </div>
+  </a>
+
+    <script>
+      $(function(){
+		  $('s').click()
+	  })
+    </script>
+</body>
+</html>

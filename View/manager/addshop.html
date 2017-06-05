@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>添加商品</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .form-group{
+            margin: 20px 0;
+        }
+    </style>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-head">
+        <center>
+          <div class="admin">
+            <p>欢迎你，管理员</p>
+            <span class="radio">Online</span>
+          </div>
+        </center>
+      </div>
+      <div class="sidebar-list">
+        <a href="order.html"><div class="item">订单列表</div></a>
+        <a href="shop.html"><div class="item">商品列表</div></a>
+        <a href="addshop.html"><div class="item">添加商品</div></a>
+        <a href="user.html"><div class="item">用户管理</div></a>
+        <a href="charts.html"><div class="item">数据统计</div></a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="list">
+        <div class="item-title">添加商品</div>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label for="shopname" class="col-sm-5 control-label">商品名称</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="shopname" placeholder="请输入商品名称">
+                </div>
+            </div><br>
+            <div class="form-group">
+                <label for="shopprice" class="col-sm-5 control-label">商品价格</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="shopprice" placeholder="请输入商品价格">
+                </div>
+            </div><br>
+            <div class="form-group">
+                <label for="shopuse" class="col-sm-5 control-label">商品功效</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="shopuse" placeholder="请输入商品价格">
+                </div>
+            </div><br>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">产品描述</label>
+                <textarea style="margin-left: 15px;width: 300px;height: 80px;" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">产品配方</label>
+                <textarea style="margin-left: 15px;width: 300px;height: 80px;" class="form-control" rows="3"></textarea>
+            </div><br>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">护肤功效</label>
+                <textarea style="margin-left: 15px;width: 300px;height: 80px;" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">使用建议</label>
+                <textarea style="margin-left: 15px;width: 300px;height: 80px;" class="form-control" rows="3"></textarea>
+            </div><br>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">产品图标</label>
+                <input style="margin-left: 15px;" type="file" id="inputfile">
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">产品图片</label>
+                <input style="margin-left: 15px;" type="file" id="inputfile">
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-5 control-label">产品底部</label>
+                <input style="margin-left: 15px;" type="file" id="inputfile">
+            </div><br>
+            <button style="width: 100px;margin: 80px 0 80px 15px;" class="btn btn-primary">保存</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

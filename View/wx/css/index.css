@@ -1,0 +1,69 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input,i,em,input,textarea{ margin: 0;padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;color: #040a2b;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+body{}
+.kong{width: 100%;height: 15vh;}
+
+/*.header{width: 100%;position: inherit;top: 0;border-bottom: 3px solid #040a2b;}
+.header .meus{padding: 0 1vw;border-right: 1px solid #aeaeae;width: 15.5%;float: left;background-color: #fff;}
+.header .meus img{width: 100%;}
+.header .logo{width: 64.3%;float: left;background-color: #fff;}
+.header .logo img{width: 95%;margin: 0.3vh 0 0 1.5vw;}
+.header .car{padding: 0 1vw;border-left: 1px solid #aeaeae;width: 15.5%;float: right;background-color: #fff;}
+.header .car img{width: 100%;}*/
+
+.header{width: 100%;position: fixed;bottom: 0;border-top: 3px solid #040a2b;padding: 0.5vh 5vw;background-color: #fff;z-index: 999;}
+.header .index{width: 15%;font-size: 12px;text-align: center;float: left;margin-left: 2vw;}
+.header .index img{width: 50%;margin: 0 auto;}
+.header .mycar{width: 15%;float: left;font-size: 12px;margin-left: 8vw;text-align: center;}
+.header .mycar img{width: 50%;margin: 0 auto;}
+.header .history{width: 15%;float: left;font-size: 12px;margin-left: 8vw;text-align: center;}
+.header .history img{width: 50%;margin: 0 auto;}
+.header .my{width: 15%;float: left;font-size: 12px;margin-left: 8vw;text-align: center;}
+.header .my img{width: 50%;margin: 0 auto;}
+
+.slideBox{ position:relative;max-width:640px;overflow:hidden;/*border-top: 3px solid #040a2b;*/}
+.slideBox .hd{position:absolute; height:28px; line-height:28px; bottom:30%; right:50%; z-index:1;margin-right: -33px;}
+.slideBox .hd li{ display:inline-block; width:10px; height:10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#6d708c; text-indent:-9999px; overflow:hidden; margin:0 6px;}
+.slideBox .hd li.on{ background:#0d3c73;}
+
+.footer{width: 100%;margin: 1vh auto;color: #040a2b;}
+.footer p{text-align: center;}
+.footer .p_01{font-size: 15px;}
+.footer .p_02{font-size: 21px;}
+.footer .p_03{font-size: 15px;}
+.footer .button{margin: 0 auto;margin-top: 1vh;}
+.footer button{background-color: #040a2b;color: #fff;padding: 1vh 13vw;border:0;font-size: 20px;}
+
+/*.nav{width: 80%;position: absolute;background: #fff;z-index: 999;top: 0;height: 110%;left: 0;border: 1px solid #000;display: none;}
+.proList{padding: 10px 0;}
+.proItem{font-size: 16px;color: #040a2b;text-indent: 60px;font-weight: bold;padding: 25px 0 8px 0;border-bottom: 1px solid #f3f4f4;background-image: url(../img/arrow.png);background-repeat: no-repeat;background-position: 55% 72%;background-size: 3%;}
+.sidebarItem{background: #040a2b;margin-top: 10px;padding: 5px 0;color: #fff;font-size: 14px;text-indent: 60px;}
+
+.left{position: relative;left: 80%;}
+.shade{position: fixed;left: 0;top: 0;right: 0;bottom: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, .6);z-index: 998;display: none;}*/
+
+@media screen and (min-width: 640px) {
+    body{
+		/*left: 50%;
+		margin-left: -320px;*/
+	}
+	.header{
+		width: 640px;
+	}
+	.header .meus{
+		width: 14.5%;
+	}
+	.header .logo{
+		width: 61%;
+	}
+	.header .car{
+		width: 14.5%; 
+	}
+}
+

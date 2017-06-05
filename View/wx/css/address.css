@@ -1,0 +1,48 @@
+/*2016/6/10 11:53*/
+@charset "utf-8";
+
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input{ margin: 0 auto;padding: 0 auto;}
+body{ background:#efeff4;font-family:"MicrosoftYaHei";}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;color: #646363;}
+figure,li,strong{ box-sizing: border-box;}
+.none{ display: none;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+.zw{display: block;height: 17vmin;}
+.x_hide{ display: none;}
+.fl{ float: left; }
+.fr{ float: right; }
+
+.title{text-align: center;color: #040a2b;font-size: 4.5vmin;margin: 4vmin auto;}
+
+.myaddress_01{ margin-top:2vw; padding:2vh 3vw 2vh 3vw; background:#FFFFFF;font-size: 3vmin;}
+.myaddress_01 .name{margin: 1vmin auto;}
+.myaddress_01 .name span{font-size: 4.5vmin;}
+.myaddress_01 .address .address_01{color: #00FFFF;}
+.myaddress_01 .address .address_02{color: #aaa;}
+
+.add{position: fixed;bottom: 0;width: 100%;padding: 5vmin 0;background-color: #00FFFF;}
+.add p{text-align: center;color: #fff;font-size: 4.5vmin;}
+
+
+@media all and (orientation : landscape){
+	.user{
+		top: 30%;
+	}
+}
+@media screen and (min-width: 568px) {
+    .headeer{
+		margin-top: 27vmin;
+	}
+}
+@media screen and (min-width: 667px) {
+    .headeer{
+		margin-top: 25vmin;
+	}
+}
+@media screen and (min-width: 736px) {
+    .headeer{
+		margin-top: 22vmin;
+	}
+}

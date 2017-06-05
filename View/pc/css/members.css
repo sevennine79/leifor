@@ -1,0 +1,121 @@
+*{padding: 0 auto;margin: 0 auto;}
+a{text-decoration: none;border: 0 none;color: #000;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+
+.kong{width: 100%;height: 85px;}
+
+.header{width: 100%;height: 85px;position: fixed;z-index: 998;background: rgba(255, 255, 255, .6);}
+.header .logo_box{position: absolute;left: 0;height: 85px;}
+.header .logo_box img{width: 251px;height: 51px;margin-top: 12px;margin-left: 58px;}
+.header .link_box{text-align: center;line-height: 85px;}
+.header .link_box ul{font-size: 0;}
+.header .link_box ul li{width: 100px;display: inline-block;font-size: 14px;cursor: pointer;font-weight: bold;}
+.header .sidebar{width: 240px;height: 85px;position: absolute;right: 0;font-size: 0;text-align: center;}
+.header .sidebar .useronload {display: inline-block;font-size: 14px;width: 33%;border-right: 1px solid #000;height: 53px;line-height: 53px;margin-top: 16px;cursor: pointer;font-weight: bold;}
+.header .sidebar .shopCar {display: inline-block;font-size: 0;width: 33%;border-right: 1px solid #000;height: 53px;line-height: 62px;margin-top: 16px;cursor: pointer;background: url(../imgs/shopcar.png) no-repeat 50% 40%;}
+.header .sidebar .search {display: inline-block;font-size: 0;width: 33%;height: 53px;line-height: 53px;margin-top: 16px;cursor: pointer;background: url(../imgs/seach.png) no-repeat 50% 40%;}
+/*头部*/
+
+.search_box,.product{background: rgba(255, 255, 255, .4);width: 100%;;height: 30px;line-height: 30px;display: none;position: fixed;top: 85px;z-index: 99;}
+.search_box .s_input_list{float: right;margin-right: 10px;}
+.product .p_list{font-size: 0;text-align: center;}
+.product .p_list li{display: inline-block;width: 70px;text-align: center;font-size: 14px;font-weight: bold;}
+/*搜索弹出*/
+
+.shopCar_cont{display: inline-block;position: fixed;right: 90px;top: 80px;z-index: 999;background: #fff;display: none;}
+.shopCar_box{width: 300px;position: relative;background:#fff;border: 1px solid#b5b5b5;padding: 20px 0;text-align: center;color: #f95151;font-size: 14px;}
+.shopCar_box span{width:0; height:0; font-size:0; overflow:hidden; position:absolute;}
+.shopCar_box .bot{border-width:15px; border-style:solid dashed dashed; border-color:transparent transparent #b5b5b5; right:14px; top:-30px;}
+.shopCar_box .top{border-width:15px; border-style:solid dashed dashed; border-color:transparent transparent #fff; right:14px; top:-29px;}
+/*购物车弹出*/
+
+.container{width: 1350px;margin: 0 auto;position: relative;}
+.container a{position: absolute;width: 80px;height: 30px;color: transparent;}
+.container .a1{top: 530px;right: 300px;}
+.container .a2{top: 300px;left: 100px;}
+.container .a3{top: 700px;right: 400px;}
+.container img{width: 100%;}
+
+.information{width: 100%; height: 700px;}
+.informationleft{width: 65%;height: 700px;background-color: #bbb;float: left;}
+.informationrigth{width: 35%;height: 700px;float: left;}
+
+/*left*/
+.informationleft img{width: 100%;height: 700px;}
+
+/*rigth*/
+.rigthcont{ margin: 20vh 0 0 2vw;}
+.rigthconttitle{width:29%;font-size: 26px;font-weight: bold;border-top: 1px solid #aaa;border-bottom: 1px solid #aaa;padding: 1.5vh 0;color: #383838;}
+.rigthcont img{margin: 0 0 0 5vw;z-index: 2;}
+.rigthcont_p2{width: 245px;height:23px;text-align: center;padding: 2vh 0;color: #fff;cursor:pointer;margin-left: 14.8vw;position: relative;bottom: 7.5vh;right: 8.5vw;z-index: 1;}
+
+/*evaluation*/
+.evaluation{width: 75%;margin: 5vh auto 10vh auto;}
+.evaluation_01{width: 100%;border-bottom: 2px solid #aaa;}
+.evaluation_01 .span{width: 100%;height:90px;font-size: 28px;color: #000;border-bottom: 1px solid #aaa;}
+.evaluation_01 .span .span_01{float: left;margin:3vh 0 0 30vw;border-right: 1px solid #000;height: 50px;line-height: 50px;padding-right: 1vw;color: #060606;font-weight: bold;}
+.evaluation_01 .span .span_02{float: left;margin: 3vh 0 0 1vw;height: 50px;line-height: 50px;color: #999999;font-weight: bold;}
+.evaluation_01 .p{margin: 5vh auto;}
+.evaluation_01 .p p{text-align: center;margin: 3vh 0 0 0;font-size: 14px;color: #999999;}
+
+.evaluation_02{width: 100%;font-size: 14px;}
+.evaluation_02 .span3 img{height: 30px;width: 30px;}
+.evaluation_021{width: 100%;border-bottom: 1px solid #000;line-height: 60px;}
+.evaluation_021 .span1{font-size: 24px;margin: 0 10vw 0 2vw;color: #060606;font-weight: bold;}
+.evaluation_021 .span2{position: relative;top: -3px;}
+.evaluation_021 .span3{height: 30px;width: 30px;float: right;margin: 1.5vh 3vw 0 0;cursor: pointer}
+.dropdown_01{display: none;width: 100%;height: 100px;background-color: #eee;text-align: center;font-size: 14px;}
+
+.evaluation_022{width: 100%;border-bottom: 1px solid #000;line-height: 60px;}
+.evaluation_022 .span1{font-size: 24px;margin: 0 10vw 0 2vw;color: #060606;font-weight: bold;}
+.evaluation_022 .span2{position: relative;top: -3px;}
+.evaluation_022 .span3{height: 30px;width: 30px;float: right;margin: 1.5vh 3vw 0 0;cursor: pointer}
+.dropdown_02{display: none;width: 100%;height: 150px;background-color: #eee;text-align: center;font-size: 14px;}
+
+.evaluation_023{width: 100%;border-bottom: 1px solid #000;line-height: 60px;}
+.evaluation_023 .span1{font-size: 24px;margin: 0 10vw 0 2vw;color: #060606;font-weight: bold;}
+.evaluation_023 .span2{position: relative;top: -3px;}
+.evaluation_023 .span3{height: 30px;width: 30px;float: right;margin: 1.5vh 3vw 0 0;cursor: pointer}
+.dropdown_03{display: none;width: 100%;height: 150px;background-color: #eee;text-align: center;font-size: 14px;}
+
+.evaluation_024{width: 100%;border-bottom: 1px solid #000;line-height: 60px;}
+.evaluation_024 .span1{font-size: 24px;margin: 0 10vw 0 2vw;color: #060606;font-weight: bold;}
+.evaluation_024 .span2{position: relative;top: -3px;}
+.evaluation_024 .span3{height: 30px;width: 30px;float: right;margin: 1.5vh 3vw 0 0;cursor: pointer}
+.dropdown_04{display: none;width: 100%;height: 150px;background-color: #eee;text-align: center;font-size: 14px;}
+
+.evaluation_025{width: 100%;border-bottom: 1px solid #000;line-height: 60px;}
+.evaluation_025 .span1{font-size: 24px;margin: 0 10vw 0 2vw;color: #060606;font-weight: bold;}
+.evaluation_025 .span2{position: relative;top: -3px;}
+.evaluation_025 .span3{height: 30px;width: 30px;float: right;margin: 1.5vh 3vw 0 0;cursor: pointer}
+.dropdown_05{display: none;width: 100%;height: 150px;background-color: #eee;text-align: center;font-size: 14px;}
+
+.evaluation_03{width: 100%;border-bottom: 2px solid #aaa;}
+.evaluation_03 .span{width: 100%;height:90px;font-size: 28px;color: #000;border-bottom: 1px solid #aaa;}
+.evaluation_03 .span .span_01{float: left;margin:3vh 0 0 30vw;border-right: 1px solid #000;height: 50px;line-height: 50px;padding-right: 1vw;color: #999999;font-weight: bold;}
+.evaluation_03 .span .span_02{float: left;margin: 3vh 0 0 1vw;height: 50px;line-height: 50px;color: #060606;font-weight: bold;}
+.evaluation_03 .p{margin: 5vh auto;}
+.evaluation_03 .p p{text-align: center;margin: 3vh 0 0 0;font-size: 14px;color: #aaa;}
+
+.evaluation_04{width: 70%;height:130px;margin: 5vh auto 20vh auto;font-size: 14px;}
+.evaluation_04 table{width: 100%;height:130px;background-color: #c5c5c5;}
+.evaluation_04 .tr_01{background-color: #40c7db;}
+.evaluation_04 .tr_02{background-color: #fff;}
+.evaluation_04 .tr_03{background-color: #ededed;}
+.evaluation_04 .tr_04{background-color: #fff;}
+.evaluation_04 .tr_05{background-color: #ededed;}
+
+/*more*/
+.more{width: 85%;height: 200px;margin: 0 auto;font-size: 16px;}
+.about,.help,.service,.phone{float: left;width: 10vw;}
+.about_p1{font-size: 22px;border-bottom: 1px solid #000;font-weight: bold;padding: 0.5vh 0;}
+.about_p2,.about_p3{margin-top: 1.5vh;}
+.help{margin-left: 14vw;}
+.help_p1{font-size: 22px;border-bottom: 1px solid #000;font-weight: bold;padding: 0.5vh 0;}
+.help_p2,.help_p3{margin-top: 1.5vh;}
+.service{margin-left: 14vw;}
+.service_p1{font-size: 22px;border-bottom: 1px solid #000;font-weight: bold;padding: 0.5vh 0;}
+.service_p2,.service_p3,.service_p4,.service_p5{margin-top: 1.5vh;}
+.phone{margin-left: 14vw;}
+.phone_p1{font-size: 22px;border-bottom: 1px solid #000;font-weight: bold;padding: 0.5vh 0;}
+.phone_p2,.phone_p3{margin-top: 1.5vh;}

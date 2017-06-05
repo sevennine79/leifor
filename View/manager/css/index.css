@@ -1,0 +1,20 @@
+@charset "utf-8";
+body,html,div,h1{margin: 0;padding: 0;}
+.header{padding: 15px 20px;border-bottom: 1px solid #ccc;width: 100%;}
+.sidebar{display: inline-block;width: 12%;margin: 0 5px;float: left;}
+.radio{display: inline-block;width: 12px;height: 12px;border-radius: 50%;background: limegreen;text-indent: 20px;line-height: 15px;color: #555;margin-left: -55px;}
+.sidebar-head{width: 100%;padding: 20px 0;background: #fff;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.sidebar .item{border: 1px solid #ccc;height: 40px;text-align: center;line-height: 40px;border-radius: 5px;margin: 5px 0px;background: #fff;}
+.sidebar .item:hover{background: #eee;}
+.container-fluid{float: left;width: 87%;}
+.item-title{background: #eee;height: 40px;line-height: 40px;margin-top: 10px;text-indent: 20px;}
+.content{border: 1px solid #ccc;box-sizing: border-box;padding: 10px;border-top: none;box-sizing: border-box;}
+.content span{font-weight: bold;}
+.content button{float: right;margin: 10px 0 0 0;}
+.sumBox{display: inline-block;float: left;width: 20%;margin-left: 4%;margin-top: 20px;margin-bottom: 20px;height: 80px;text-align: center;border-radius: 5px;color: #fff;background-image: url(../imgs/钱包.png);background-size: 12%;background-repeat: no-repeat;background-position: 10% 50%;}
+.sumBoxItem p{font-size: 24px;}
+.sumBoxItem p span{font-size: 16px;}
+.tab-pane{border: 1px solid #ccc;border-top: none;}
+.highcharts-credits{display: none;}
+.datatable{display: none;}
+.clearfix{content: " ";display: table;clear: both;}

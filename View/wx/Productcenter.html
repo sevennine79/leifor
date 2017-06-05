@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<link href="/view/wx/css/index.css" rel="stylesheet">
+<link href="/view/wx/css/Productcenter.css" rel="stylesheet">
+<script src="/view/wx/js/jquery.min.js"></script>
+<script src="/view/wx/js/index.js"></script>
+<script type="text/javascript">
+	$(function () {
+            var speed = 800;//滚动速度
+            var h=document.body.clientHeight;
+            
+            //回到顶部
+            $("#toTop").click(function () {
+                $('html,body').animate({
+                    scrollTop: '0px'
+                },
+                speed);         
+            });
+
+            $(".delet").click(function(){
+                $(".commodity").css("display","none");
+            })
+        });
+</script>
+<title>产品中心</title>
+</head>
+<body>
+<div class="container">
+    <form action="">
+
+        <div class="cartheard">
+            <p>如有任何问题  欢迎拨打客服热线</p>
+            <p>4009-555-888</p>
+        </div>
+
+        <div class="mycart">
+            <p class="p_01">产品中心</p>
+            <p>共 <span>3</span> 件商品</p>
+        </div>
+
+        <a href="?action=product_01">
+            <div class="myorder_01">
+                <div class="container">    
+                  <div class="clearfix"></div>
+                  <img src="/view/wx/img/productcont_01.jpg">     
+                  <ol>
+                    <li class="ol1">羽曦-修复保湿洁面乳</li>
+                    <li class="ol3">运费：￥0.00</li>
+                    <li class="ol4">
+                      <p>￥300.00</p>
+                      <span class="ol5">小计：￥300.00</span>
+                    </li>
+                  </ol>
+                  <div class="clearfix"></div>  
+                </div>
+            </div>
+        </a>
+
+        <a href="?action=product_02">
+            <div class="myorder_01">
+                <div class="container">    
+                  <div class="clearfix"></div>
+                  <img src="/view/wx/img/productcont_02.jpg">     
+                  <ol>
+                    <li class="ol1">羽曦-修护因子冻干粉</li>
+                    <li class="ol3">运费：￥0.00</li>
+                    <li class="ol4">
+                      <p>￥300.00</p>
+                      <span class="ol5">小计：￥300.00</span>
+                    </li>
+                  </ol>
+                  <div class="clearfix"></div>  
+                </div>
+            </div>
+        </a>
+
+        <a href="?action=product_03">
+            <div class="myorder_01">
+                <div class="container">    
+                  <div class="clearfix"></div>
+                  <img src="/view/wx/img/productcont_03.jpg">     
+                  <ol>
+                    <li class="ol1">羽曦-肽-修护面膜</li>
+                    <li class="ol3">运费：￥0.00</li>
+                    <li class="ol4">
+                      <p>￥300.00</p>
+                      <span class="ol5">小计：￥300.00</span>
+                    </li>
+                  </ol>
+                  <div class="clearfix"></div>  
+                </div>
+            </div>
+        </a>
+
+
+    </form>
+</div>    
+    <div class="kong"></div>
+    
+    <div class="header">
+        <a href="?action=index">
+            <div class="index">
+                <ul>
+                    <li><img src="/view/wx/img/index1.png" alt=""></li>
+                    <li>首页</li>
+                </ul>
+            </div>
+        </a> 
+        <a href="?action=Productcenter">   
+            <div class="mycar">
+                <ul>
+                    <li><img src="/view/wx/img/history2.png" alt=""></li>
+                    <li style="font-weight: bold;color:#040a2b;">产品中心</li>
+                </ul>
+            </div>
+        </a>
+        <a href="?action=cart">    
+            <div class="history">
+                <ul>
+                    <li><img src="/view/wx/img/mycar1.png" alt=""></li>
+                    <li>购物车</li>
+                </ul>
+            </div>
+        </a>   
+        <a href="?action=order"> 
+            <div class="my">
+                <ul>
+                    <li><img src="/view/wx/img/my1.png" alt=""></li>
+                    <li>个人中心</li>
+                </ul>
+            </div>
+        </a>    
+    </div>
+
+</body>
+<script type="text/javascript">
+    TouchSlide({ 
+        slideCell:"#slideBox",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell:".bd ul", 
+        effect:"leftLoop", 
+        autoPlay:true,
+        autoPage:true //自动分页
+    });
+</script>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,input,i,em,input,textarea{ margin: 0;padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;}
+ul,ol{ list-style: outside none none;}
+a{ text-decoration: none;color: #040a2b;}
+img{ display: block;max-width: 100%;}
+.clearfix{ content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+body{background-color: #efeff4;}
+
+.title p{
+	text-align: center;
+	padding: 3vmin 0;
+	color: #040a2b;
+	font-weight: bold;
+}
+
+.myorder_01{ margin-top:2vw; padding:1vh 2vw 2vh 2vw; background:#FFFFFF;}
+.myorder_01 ul li{ float:left;}
+.myorder_01 .li1{ font-size:3vw;}
+.myorder_01 .li1 span{color:#b4b4b4;}
+.myorder_01 .li2{ font-size:3vw; color:#b4b4b4; margin-left:1vw;}
+.myorder_01 .li3{ font-size:3vw; float:right; margin-right:1vw;}
+.myorder_01 .li4{ font-size:3vw; color:#b4b4b4; float:right;}
+.myorder_01 img{ width:25vw; float:left; margin-top:2vw;}
+.myorder_01 ol{ float:left;margin-left:5vw;margin-top: 5vmin;}
+.myorder_01 .ol1{ font-weight:bold; font-size:4.5vw;}
+.myorder_01 .ol2{ font-size:3vw; margin-top:1vw;}
+.myorder_01 .ol3{ font-size:3vw; color:#b4b4b4; margin-top:3vw;}
+.myorder_01 .ol4{ font-size:3vw; color:#d73b51; margin-top:3vw;}
+.myorder_01 .ol4 p{ float:left;}
+.myorder_01 .ol5{ font-size:4vw; color:#000000; float:right; margin-left:15vw;}
+
+.myorder_02{ margin-top:2vw; padding:1vh 2vw 2vh 2vw; background:#FFFFFF;}
+.myorder_02 ul li{ float:left;}
+.myorder_02 .li1{ font-size:3vw;}
+.myorder_02 .li1 span{color:#b4b4b4;}
+.myorder_02 .li2{ font-size:3vw; color:#b4b4b4; margin-left:1vw;}
+.myorder_02 .li3{ font-size:3vw; float:right; margin-right:1vw;}
+.myorder_02 .li4{ font-size:3vw; color:red; float:right;}
+.myorder_02 img{ width:25vw; float:left; margin-top:2vw;}
+.myorder_02 ol{ float:left;margin-left:5vw;margin-top: 5vmin;}
+.myorder_02 .ol1{ font-weight:bold; font-size:4.5vw;}
+.myorder_02 .ol2{ font-size:3vw; margin-top:1vw;}
+.myorder_02 .ol3{ font-size:3vw; color:#b4b4b4; margin-top:3vw;}
+.myorder_02 .ol4{ font-size:3vw; color:#d73b51; margin-top:3vw;}
+.myorder_02 .ol4 p{ float:left;}
+.myorder_02 .ol5{ font-size:4vw; color:#000000; float:right; margin-left:15vw;}
+
+@media screen and (min-width: 568px) {
+    .headeer{
+		margin-top: 27vmin;
+	}
+}
+@media screen and (min-width: 667px) {
+    .headeer{
+		margin-top: 25vmin;
+	}
+}
+@media screen and (min-width: 736px) {
+    .headeer{
+		margin-top: 22vmin;
+	}
+}

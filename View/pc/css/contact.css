@@ -1,0 +1,10 @@
+@charset "utf-8";
+.mgt50{margin-top: 30px;}
+.contactBox h2{text-align: center;}
+.contactBox span{color: red;font-size: 14px;text-align: center;margin-top: 10px;display: block;text-decoration: none;cursor: default;}
+.contctTitle{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding: 20px 0;}
+.contctTitle h3{font-weight: normal;}
+.contactItem div{padding: 10px 0 0 0;text-indent: 30px;}
+.contactItem textarea{width: 600px;height: 200px;margin-top: 20px;font-size: 16px;box-sizing: border-box;padding: 5px;}
+.contactItem_i input{margin-left: 30px;width: 200px;height: 25px;box-sizing: border-box;padding: 0 5px;}
+.contactItem button{float: right;width: 100px;height: 30px;background: #040a2b;color: #fff;border: none;}
